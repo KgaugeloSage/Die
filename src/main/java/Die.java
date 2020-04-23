@@ -16,7 +16,6 @@ public class Die {
     }
 
     /**
-     *
      * @param sides
      * @param probabilties
      */
@@ -31,11 +30,10 @@ public class Die {
     }
 
     /**
-     *
      * @param prbabilities
      * @param sides
      */
-    void setProbabilities(int[] prbabilities, int sides) {
+    private void setProbabilities(int[] prbabilities, int sides) {
         for (int i = 1; i <= sides; ++i) {
             if (i <= prbabilities.length && prbabilities[i - 1] > 1) {
                 for (int j = 0; j < prbabilities[i - 1]; ++j) {

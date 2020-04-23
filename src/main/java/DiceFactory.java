@@ -4,14 +4,15 @@ import java.util.ArrayList;
  *
  */
 public class DiceFactory implements SuperClass {
-    private ArrayList<Integer> values = new ArrayList<>();
-    private int sides;
+    private static ArrayList<Integer> values ;
+    private static int sides;
 
     /**
      *
      * @param sides
      */
     DiceFactory(int sides) {
+        values = new ArrayList<>();
         this.sides = sides;
     }
 
